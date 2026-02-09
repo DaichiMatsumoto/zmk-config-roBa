@@ -100,10 +100,10 @@
 
         EX2 {
             bindings = <
-&trans  &trans  &trans  &trans             &trans                                   &trans  &trans    &kp UP_ARROW  &trans     &trans
-&trans  &trans  &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_DOWN)  &kp HOME      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans             &trans             &trans        &trans  &trans  &trans    &trans        &trans     &trans
-&trans  &trans  &trans  &trans             &trans             &trans        &trans  &trans                                     &trans
+&kp PRINTSCREEN    &trans  &trans  &trans             &trans                                   &trans  &trans    &kp UP_ARROW  &trans     &trans
+&kp LANG5          &trans  &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_DOWN)  &kp HOME      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&kp LANG_HIRAGANA  &trans  &trans  &trans             &trans             &trans        &trans  &trans  &trans    &trans        &trans     &trans
+&trans             &trans  &trans  &trans             &trans             &trans        &trans  &trans                                     &trans
             >;
         };
 
