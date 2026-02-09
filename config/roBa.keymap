@@ -32,55 +32,28 @@
     combos {
         compatible = "zmk,combos";
 
+        double_quotation {
+            bindings = <&kp MINUS>;
+            key-positions = <20 21>;
+        };
+
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+            key-positions = <11 12>;
         };
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-        
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -103,7 +76,7 @@
             bindings = <
 &kp ESCAPE  &trans  &trans        &trans           &trans                                   &trans  &trans          &kp UP_ARROW    &trans           &kp GRAVE
 &kp TAB     &trans  &trans        &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp HOME      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp MINUS
-&kp DELETE  &trans  &trans        &trans           &trans             &trans        &trans  &trans  &trans          &trans          &trans           &kp EQUAL
+&trans      &trans  &trans        &trans           &trans             &trans        &trans  &trans  &trans          &trans          &trans           &kp EQUAL
 &trans      &trans  &kp LEFT_WIN  &kp INT_KANA     &kp LANGUAGE_2     &trans        &trans  &trans                                                   &kp SINGLE_QUOTE
             >;
 
