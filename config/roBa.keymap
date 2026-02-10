@@ -74,10 +74,10 @@
 
         EX {
             bindings = <
-&kp ESCAPE  &trans  &trans        &trans           &trans                                   &trans  &trans          &kp UP_ARROW    &trans           &kp GRAVE
-&kp TAB     &trans  &trans        &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp HOME      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp MINUS
-&trans      &trans  &trans        &trans           &trans             &trans        &trans  &trans  &trans          &trans          &trans           &kp EQUAL
-&trans      &trans  &kp LEFT_WIN  &kp INT_KANA     &kp LANGUAGE_2     &trans        &trans  &trans                                                   &kp SINGLE_QUOTE
+&kp ESCAPE  &trans  &trans         &trans             &trans                              &trans  &trans          &trans          &trans           &kp GRAVE
+&kp TAB     &trans  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp HOME        &trans      &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp MINUS
+&trans      &trans  &trans         &trans             &trans          &trans      &trans  &trans  &trans          &kp DOWN_ARROW  &trans           &kp EQUAL
+&trans      &trans  &kp LEFT_WIN   &kp INT_KANA       &kp LANGUAGE_2  &trans      &trans  &trans                                                   &kp SINGLE_QUOTE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
