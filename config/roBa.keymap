@@ -58,13 +58,22 @@
         };
     };
 
+    macros {
+        win_L: win_L {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp L>;
+            label = "WIN_L";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E  &kp R      &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D  &kp F      &kp G      &kp LEFT_WIN          &kp DELETE         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A             &kp S         &kp D  &kp F      &kp G      &win_L                &kp DELETE         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C  &kp V      &kp B      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_ALT  &mo 2  &mkp LCLK  &mkp RCLK  &lt 3 SPACE           &kp BACKSPACE      &lt 1 ENTER                             &kp BACKSLASH
             >;
