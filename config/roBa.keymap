@@ -46,6 +46,16 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <11 12>;
         };
+
+        kana_ei_kirikae {
+            bindings = <&kp LS(CAPSLOCK)>;
+            key-positions = <41 39>;
+        };
+
+        alt_alt {
+            bindings = <&kp LA(RIGHT_ALT)>;
+            key-positions = <40 39>;
+        };
     };
 
     behaviors {
