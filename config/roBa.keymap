@@ -48,7 +48,7 @@
         };
 
         kana_ei_kirikae {
-            bindings = <&kp LS(CAPSLOCK)>;
+            bindings = <&kp LA(GRAVE)>;
             key-positions = <41 39>;
         };
 
